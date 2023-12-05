@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__list__item">
+                <button [ngClass]="currentRoute == 'about' ? 'activated' : ''" class="navbar__list__item__btn" (click)="changeRoute('about')">About</button> 
+            </li>
+            <li class="navbar__list__item">
+                <button [ngClass]="currentRoute == 'resume' ? 'activated' : ''" class="navbar__list__item__btn" (click)="changeRoute('resume')">Resume</button> 
+            </li>
+            <li class="navbar__list__item">
+                <button [ngClass]="currentRoute == 'portolifo' ? 'activated' : ''" class="navbar__list__item__btn" (click)="changeRoute('portolifo')">Portfolio</button> 
+            </li>
+            <li class="navbar__list__item">
+                <button [ngClass]="currentRoute == 'blog' ? 'activated' : ''" class="navbar__list__item__btn" (click)="changeRoute('blog')">Blog</button> 
+            </li>
+            <li class="navbar__list__item">
+                <button [ngClass]="currentRoute == 'contract' ? 'activated' : ''" class="navbar__list__item__btn" (click)="changeRoute('contract')">Contract</button> 
+            </li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

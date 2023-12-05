@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 60px 0;
+}
+
+
+@media (min-width: 740px) {
+    .wrapper {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 739px) {
+    .wide {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 15px;
+        padding-bottom: 72px;
+    }
+}

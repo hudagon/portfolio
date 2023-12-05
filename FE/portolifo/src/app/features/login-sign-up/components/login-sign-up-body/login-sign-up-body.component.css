@@ -1,0 +1,121 @@
+.wrapper {
+    min-height: 100svh;
+    background-image: url('../../../../../assets/images/login-page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-panel {
+    background: hsla(240, 1%, 17%, 0.329);
+    padding: 30px;
+    width: 390px;
+    backdrop-filter: blur(3px);
+    border-radius: var(--border-radius-3);
+    row-gap: 12px;
+    margin-bottom: 60px;
+}
+
+.login-panel__header {
+    font-size: var(--fs-1);
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.login-panel__body {
+    margin-top: 24px;
+}
+
+.login-panel__body__input-group {}
+
+.login-panel__body__input-group+.login-panel__body__input-group {
+    margin-top: 12px;
+}
+
+.login-panel__body__input-group__input {
+    padding: 9px 12px;
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-radius-2);
+    color: var(--text-color);
+}
+
+.login-panel__body__input-group__input:focus {
+    outline: none;
+}
+
+.login-panel__body__remember-me-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.login-panel__body_remember-me-group__input {
+    max-width: 15px;
+    border-radius: var(--border-radius-2);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.login-panel__body_remember-me-group__input:focus {
+    outline: none;
+}
+
+.login-panel__body__remember-be-group__text {}
+
+.login-panel__footer {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-panel__footer__submit {
+    width: 100%;
+    background-color: var(--text-color);
+    color: #333;
+    border-radius: var(--border-radius-2);
+    height: 45px;
+}
+
+.login-panel__footer__submit:hover {
+    opacity: 0.81;
+}
+
+.login-panel__footer__text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.login-panel__footer__text__line {
+    flex: 1;
+    position: relative;
+    top: -12px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.login-panel__footer__oauth-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 21px;
+}
+
+.login-panel__footer__oauth-group__icon {
+    width: 21px;
+}
+
+.login-panel__footer__oauth-group__icon:hover {
+    opacity: 0.81;
+    cursor: pointer;
+}

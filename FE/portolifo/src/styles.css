@@ -1,0 +1,34 @@
+/* CSS cho grid system */
+@import url(assets/css/grid-system.css);
+
+/* CSS reset */
+@import url(assets/css/css-reset.css);
+
+/* CSS variables */
+@import url(assets/css/css-variables.css);
+
+/* Css custom checkbox */
+@import url(assets/css/check-box.css);
+
+/* Google font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global CSS class */
+.tb {
+    background-color: #dfdfdf;
+    background-clip: content-box;
+    color: #333;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.activated {
+    color: var(--main-color) !important;
+}
+
+.activated:hover {
+    color: var(--main-color) !important;
+}
+
